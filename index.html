@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111a26" />
+    <meta name="description" content="钟杰伦的个人学术主页，研究方向包括生成式人工智能、视频生成与编辑、Flow Matching 与具身智能。" />
+    <meta property="og:title" content="钟杰伦 · Jielun Zhong" />
+    <meta property="og:description" content="Undergraduate researcher in generative AI and video editing." />
+    <meta property="og:image" content="assets/site/avatar.jpg" />
+    <title>钟杰伦 · Jielun Zhong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav-container" aria-label="主导航">
+        <a class="site-name" href="#about"><strong>Jielun</strong> Zhong</a>
+        <button class="menu-toggle icon-button" type="button" aria-label="打开导航" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <div class="nav-links">
+          <a class="nav-link is-active" href="#about">about</a>
+          <a class="nav-link" href="#research">research</a>
+          <a class="nav-link" href="#experience">experience</a>
+          <a class="nav-link" href="#honors">honors</a>
+          <a class="nav-link" href="assets/site/Jielun-Zhong-CV.pdf" target="_blank" rel="noreferrer">cv</a>
+        </div>
+      </nav>
+      <div class="reading-progress" aria-hidden="true"><span></span></div>
+    </header>
+
+    <main class="page-container">
+      <section class="profile-section" id="about">
+        <div class="profile-copy">
+          <h1><strong>Jielun</strong> Zhong <span>钟杰伦</span></h1>
+          <p class="role">Undergraduate Researcher at Lanzhou University</p>
+          <div class="affiliation">
+            <a href="https://xxxy.lzu.edu.cn/" target="_blank" rel="noreferrer">School of Information Science and Engineering</a><br />
+            <a href="https://www.lzu.edu.cn/" target="_blank" rel="noreferrer">Lanzhou University</a>, China
+          </div>
+          <div class="social-links" aria-label="联系方式">
+            <a href="mailto:zhongjielun2023@gmail.com" aria-label="Gmail" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="assets/site/Jielun-Zhong-CV.pdf" target="_blank" rel="noreferrer" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fa-solid fa-id-badge"></i></a>
+            <a href="https://scholar.google.com/scholar?q=Jielun+Zhong" target="_blank" rel="noreferrer" aria-label="Google Scholar search" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://github.com/zhongjielun2023-droid" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <button class="copy-email" type="button" data-copy="zhongjielun2023@gmail.com" aria-label="复制邮箱" title="复制邮箱"><i class="fa-regular fa-copy"></i></button>
+          </div>
+        </div>
+        <figure class="profile-photo">
+          <div class="avatar-stage">
+            <img id="profile-avatar" src="assets/site/avatar.jpg" alt="动漫头像" />
+          </div>
+          <div class="avatar-switcher" role="group" aria-label="切换头像">
+            <button class="avatar-choice is-active" type="button" data-avatar="assets/site/avatar.jpg" data-alt="动漫头像" aria-label="使用动漫头像" aria-pressed="true" title="动漫头像"><img src="assets/site/avatar.jpg" alt="" /></button>
+            <button class="avatar-choice" type="button" data-avatar="assets/site/image.png" data-alt="证件照头像" aria-label="使用证件照头像" aria-pressed="false" title="证件照头像"><img src="assets/site/image.png" alt="" /></button>
+          </div>
+        </figure>
+      </section>
+
+      <section class="bio-section prose-section">
+        <p>我是兰州大学计算机科学与技术专业本科生，预计于 2028 年毕业。我的研究兴趣集中在 <strong>生成式人工智能、视频生成与编辑、Diffusion / Flow Matching</strong>，并正在进一步探索 <strong>具身智能</strong>。</p>
+        <p>我喜欢从一个具体问题出发，完整推进问题定义、方法设计、基线复现、实验评测和论文写作。目前已完成 FocusFlow 与 FlowTrack 两项第一作者研究工作。</p>
+      </section>
+
+      <aside class="status-note" aria-label="当前研究状态"><span class="status-label">Current</span><p>正在上海交通大学人工智能学院开展具身智能方向科研学习与实验工作。</p></aside>
+
+      <section class="content-section" id="news">
+        <div class="section-title-row"><h2>News</h2></div>
+        <div class="news-list">
+          <div class="news-item"><time datetime="2026-07">Jul 2026</time><p>加入上海交通大学人工智能学院，开展具身智能方向科研实习。</p></div>
+          <div class="news-item"><time datetime="2026-06">Jun 2026</time><p><strong>FlowTrack</strong> 完成并投稿 NeurIPS 2026，担任第一作者。</p></div>
+          <div class="news-item"><time datetime="2026-05">May 2026</time><p><strong>FocusFlow</strong> 完成并投稿 AAAI 2027，担任第一作者。</p></div>
+          <div class="news-item"><time datetime="2025-12">Dec 2025</time><p>获全球校园人工智能算法精英大赛全国总决赛一等奖。</p></div>
+          <div class="news-item"><time datetime="2025-10">Oct 2025</time><p>开始视频生成与编辑方向科研实习。</p></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="research">
+        <div class="section-title-row"><h2>Selected Research</h2><span class="section-note">* first author</span></div>
+        <article class="publication">
+          <a class="publication-media" href="assets/site/focusflow-results.jpg" target="_blank" rel="noreferrer" aria-label="查看 FocusFlow 结果图"><img src="assets/site/focusflow-results.jpg" alt="FocusFlow 视频编辑结果" /></a>
+          <div class="publication-copy">
+            <div class="publication-topline"><span class="venue-badge">AAAI 2027</span><span class="review-status">Under Review</span></div>
+            <h3>FocusFlow: Reliable Local Control for Training-Free Video Editing</h3>
+            <p class="authors"><strong>Jielun Zhong*</strong>, et al.</p>
+            <p class="publication-summary">提出 Target Guidance Reallocation 与 Expectation-Confidence Filtering，为免训练视频编辑提供显式局部控制；在 FiVE-Bench Edit1–6 的五项指标上均排名第一。</p>
+            <div class="publication-links"><a href="assets/site/focusflow-results.jpg" target="_blank" rel="noreferrer">Results</a><span>Training-free</span><span>Video editing</span><span>SAM2</span></div>
+          </div>
+        </article>
+        <article class="publication">
+          <a class="publication-media" href="assets/site/flowtrack-comparison.jpg" target="_blank" rel="noreferrer" aria-label="查看 FlowTrack 对比结果"><img src="assets/site/flowtrack-comparison.jpg" alt="FlowTrack 视频编辑对比结果" /></a>
+          <div class="publication-copy">
+            <div class="publication-topline"><span class="venue-badge">NeurIPS 2026</span><span class="review-status">Under Review</span></div>
+            <h3>FlowTrack: Controlling Edit-Signal Execution in Inversion-Free Flow Video Editing</h3>
+            <p class="authors"><strong>Jielun Zhong*</strong>, et al.</p>
+            <p class="publication-summary">将编辑信号估计与执行解耦，通过 causal direction carrying 与响应感知衰减稳定视频编辑过程，在 419 个评测样本的七项指标中取得六项最佳。</p>
+            <div class="publication-links"><a href="assets/site/flowtrack-comparison.jpg" target="_blank" rel="noreferrer">Results</a><span>Flow matching</span><span>Video generation</span><span>Control</span></div>
+          </div>
+        </article>
+        <article class="research-project">
+          <div class="project-year">2026–2027</div>
+          <div><h3>第 29 届䇹政基金科研见习研究项目</h3><p class="project-meta">项目负责人 · 数理大组组长 · LZU–JZH2930</p><p>研究外部先验与内部编辑置信协同的视频编辑方法，负责研究推进、方法实现与小组协作。</p></div>
+        </article>
+      </section>
+
+      <section class="content-section" id="experience">
+        <div class="section-title-row"><h2>Research Experience</h2></div>
+        <div class="experience-list">
+          <article class="experience-item"><time>Jul 2026 – Present</time><div><h3>上海交通大学 · 人工智能学院</h3><p class="experience-role">Research Intern · Embodied Intelligence</p><p>参与文献调研、实验实现与研究讨论，探索视觉模型与真实环境的连接。</p></div></article>
+          <article class="experience-item"><time>Oct 2025 – Jun 2026</time><div><h3>National University of Singapore</h3><p class="experience-role">Research Intern · Video Generation</p><p>围绕 training-free / inversion-free 视频编辑开展研究，完成两项第一作者工作。</p></div></article>
+          <article class="experience-item"><time>Aug 2023 – Jun 2028</time><div><h3>兰州大学 · 计算机科学与技术</h3><p class="experience-role">B.Eng. Candidate</p><p>GPA 4.17 / 5.00，专业排名 8 / 114（前 7%），加权平均分 91.65。</p></div></article>
+        </div>
+      </section>
+
+      <section class="content-section" id="honors">
+        <div class="section-title-row"><h2>Honors &amp; Scholarships</h2></div>
+        <div class="honors-list">
+          <div class="honor-item"><span>2026</span><p>蔡达诚奖学金</p></div>
+          <div class="honor-item"><span>2026</span><p>中国机器人及人工智能大赛 · 国家二等奖</p></div>
+          <div class="honor-item"><span>2026</span><p>中国机器人及人工智能大赛 · 省级一等奖</p></div>
+          <div class="honor-item"><span>2025</span><p>全球校园人工智能算法精英大赛全国总决赛 · 国家级一等奖</p></div>
+          <div class="honor-item"><span>2025</span><p>全球校园人工智能算法精英大赛省级选拔赛 · 省级一等奖</p></div>
+          <div class="honor-item"><span>2025</span><p>全国大学生电子设计竞赛甘肃赛区选拔赛 · 省级二等奖</p></div>
+          <div class="honor-item"><span>2024</span><p>蓝桥杯 C/C++ 程序设计大学 A 组 · 省级二等奖</p></div>
+        </div>
+      </section>
+
+      <section class="content-section skills-section" id="skills">
+        <div class="section-title-row"><h2>Skills</h2></div>
+        <dl class="skills-list">
+          <div><dt>Research</dt><dd>Generative AI, video generation &amp; editing, diffusion, flow matching, embodied AI</dd></div>
+          <div><dt>Programming</dt><dd>Python, PyTorch, C/C++, Java, Git, Linux, LaTeX</dd></div>
+          <div><dt>Languages</dt><dd>Chinese (native), English (CET-4 569, CET-6 551)</dd></div>
+        </dl>
+      </section>
+
+      <section class="contact-section" id="contact"><h2>Contact</h2><p>欢迎交流生成式视频、Flow Matching、具身智能与科研合作。</p><a href="mailto:zhongjielun2023@gmail.com">zhongjielun2023@gmail.com</a></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-container"><p>© <span id="year"></span> Jielun Zhong. Hosted by GitHub Pages.</p><a href="#top">Back to top <i data-lucide="arrow-up"></i></a></div></footer>
+    <div class="toast" role="status" aria-live="polite">邮箱已复制</div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
