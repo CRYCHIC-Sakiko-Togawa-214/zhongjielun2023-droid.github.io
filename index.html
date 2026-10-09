@@ -23,6 +23,7 @@
         <div class="nav-links">
           <a class="nav-link is-active" href="#about">about</a>
           <a class="nav-link" href="#research">research</a>
+          <a class="nav-link" href="#projects">projects</a>
           <a class="nav-link" href="#experience">experience</a>
           <a class="nav-link" href="#honors">honors</a>
           <a class="nav-link" href="assets/site/Jielun-Zhong-CV.pdf" target="_blank" rel="noreferrer">cv</a>
@@ -61,7 +62,7 @@
 
       <section class="bio-section prose-section">
         <p>我是兰州大学计算机科学与技术专业本科生，预计于 2028 年毕业。我的研究兴趣集中在 <strong>生成式人工智能、视频生成与编辑、Diffusion / Flow Matching</strong>，并正在进一步探索 <strong>具身智能</strong>。</p>
-        <p>我喜欢从一个具体问题出发，完整推进问题定义、方法设计、基线复现、实验评测和论文写作。目前已完成 FocusFlow 与 FlowTrack 两项第一作者研究工作。</p>
+        <p>我喜欢从一个具体问题出发，完整推进问题定义、方法设计、基线复现、实验评测和论文写作。目前已完成 FlowTrack，并正在推进 Between Glances 等第一作者研究工作。</p>
       </section>
 
       <aside class="status-note" aria-label="当前研究状态"><span class="status-label">Current</span><p>正在上海交通大学人工智能学院开展具身智能方向科研学习与实验工作。</p></aside>
@@ -69,9 +70,10 @@
       <section class="content-section" id="news">
         <div class="section-title-row"><h2>News</h2></div>
         <div class="news-list">
+          <div class="news-item"><time datetime="2026-10">Oct 2026</time><p><strong>FlowTrack</strong> 被 NeurIPS 2026 接收，评审分数为 <strong>5 / 4 / 4</strong>。</p></div>
           <div class="news-item"><time datetime="2026-07">Jul 2026</time><p>加入上海交通大学人工智能学院，开展具身智能方向科研实习。</p></div>
           <div class="news-item"><time datetime="2026-06">Jun 2026</time><p><strong>FlowTrack</strong> 完成并投稿 NeurIPS 2026，担任第一作者。</p></div>
-          <div class="news-item"><time datetime="2026-05">May 2026</time><p><strong>FocusFlow</strong> 完成并投稿 AAAI 2027，担任第一作者。</p></div>
+          <div class="news-item"><time datetime="2026-10">Oct 2026</time><p><strong>Between Glances</strong> 投稿 ICLR 2027，担任第一作者。</p></div>
           <div class="news-item"><time datetime="2025-12">Dec 2025</time><p>获全球校园人工智能算法精英大赛全国总决赛一等奖。</p></div>
           <div class="news-item"><time datetime="2025-10">Oct 2025</time><p>开始视频生成与编辑方向科研实习。</p></div>
         </div>
@@ -80,29 +82,61 @@
       <section class="content-section" id="research">
         <div class="section-title-row"><h2>Selected Research</h2><span class="section-note">* first author</span></div>
         <article class="publication">
-          <a class="publication-media" href="assets/site/focusflow-results.jpg" target="_blank" rel="noreferrer" aria-label="查看 FocusFlow 结果图"><img src="assets/site/focusflow-results.jpg" alt="FocusFlow 视频编辑结果" /></a>
+          <a class="publication-media publication-carousel" data-carousel="grace" href="https://crychic-sakiko-togawa-214.github.io/grace-demo/" target="_blank" rel="noreferrer" aria-label="打开 Between Glances Demo">
+            <div class="carousel-slide is-active" data-label="Mug &amp; pudding placement"><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/posters/mug-pudding-01_scene.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/highlights/mug-pudding-01_grace.mp4" type="video/mp4" /></video></div>
+            <div class="carousel-slide" data-label="Book into the caddy"><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/posters/book-caddy-01_scene.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/highlights/book-caddy-01_grace.mp4" type="video/mp4" /></video></div>
+            <div class="carousel-slide" data-label="Mug into microwave"><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/posters/mug-microwave-01_scene.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/grace-demo/single_method_videos/mug-microwave-01_grace.mp4" type="video/mp4" /></video></div>
+            <span class="publication-preview-label"><span class="status-dot" aria-hidden="true"></span> <span data-carousel-label>Mug &amp; pudding placement</span></span><span class="publication-carousel-count" data-carousel-count>1 / 3</span>
+          </a>
           <div class="publication-copy">
-            <div class="publication-topline"><span class="venue-badge">AAAI 2027</span><span class="review-status">Under Review</span></div>
-            <h3>FocusFlow: Reliable Local Control for Training-Free Video Editing</h3>
+            <div class="publication-topline"><span class="venue-badge">ICLR 2027</span><span class="review-status">Under Review</span></div>
+            <h3>Between Glances: Geometric Memory for Adaptive Action Chunking</h3>
             <p class="authors"><strong>Jielun Zhong*</strong>, et al.</p>
-            <p class="publication-summary">提出 Target Guidance Reallocation 与 Expectation-Confidence Filtering，为免训练视频编辑提供显式局部控制；在 FiVE-Bench Edit1–6 的五项指标上均排名第一。</p>
-            <div class="publication-links"><a href="assets/site/focusflow-results.jpg" target="_blank" rel="noreferrer">Results</a><span>Training-free</span><span>Video editing</span><span>SAM2</span></div>
+            <p class="publication-summary">研究几何记忆如何支持自适应 action chunking：机器人在两次观察之间延续动作，并依据当前预测稳定性决定下一次观察时机。</p>
+            <div class="publication-links"><a href="https://crychic-sakiko-togawa-214.github.io/grace-demo/" target="_blank" rel="noreferrer">Demo</a><a href="https://github.com/CRYCHIC-Sakiko-Togawa-214/grace-demo" target="_blank" rel="noreferrer">Code</a><span>Embodied AI</span><span>Geometric memory</span><span>Action chunking</span></div>
           </div>
         </article>
         <article class="publication">
-          <a class="publication-media" href="assets/site/flowtrack-comparison.jpg" target="_blank" rel="noreferrer" aria-label="查看 FlowTrack 对比结果"><img src="assets/site/flowtrack-comparison.jpg" alt="FlowTrack 视频编辑对比结果" /></a>
+          <a class="publication-media publication-carousel" data-carousel="flowtrack" href="https://crychic-sakiko-togawa-214.github.io/FlowTrack/" target="_blank" rel="noreferrer" aria-label="打开 FlowTrack Demo">
+            <div class="carousel-slide is-active" data-label="Man → panda edit"><div class="publication-comparison"><div class="comparison-pane"><span>Source</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/gym-panda-source.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/gym-panda-source.mp4" type="video/mp4" /></video></div><div class="comparison-pane"><span>FlowTrack</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/gym-panda-ours.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/gym-panda-ours.mp4" type="video/mp4" /></video></div></div></div>
+            <div class="carousel-slide" data-label="Car → jeep edit"><div class="publication-comparison"><div class="comparison-pane"><span>Source</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/coastal-jeep-source.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/coastal-jeep-source.mp4" type="video/mp4" /></video></div><div class="comparison-pane"><span>FlowTrack</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/coastal-jeep-ours.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/coastal-jeep-ours.mp4" type="video/mp4" /></video></div></div></div>
+            <div class="carousel-slide" data-label="Cat → dog edit"><div class="publication-comparison"><div class="comparison-pane"><span>Source</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/playful-dog-source.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/playful-dog-source.mp4" type="video/mp4" /></video></div><div class="comparison-pane"><span>FlowTrack</span><video muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/posters/playful-dog-ours.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/FlowTrack/assets/videos/playful-dog-ours.mp4" type="video/mp4" /></video></div></div></div>
+            <span class="publication-preview-label"><span class="status-dot" aria-hidden="true"></span> <span data-carousel-label>Man → panda edit</span></span><span class="publication-carousel-count" data-carousel-count>1 / 3</span>
+          </a>
           <div class="publication-copy">
-            <div class="publication-topline"><span class="venue-badge">NeurIPS 2026</span><span class="review-status">Under Review</span></div>
+            <div class="publication-topline"><span class="venue-badge">NeurIPS 2026</span><span class="review-status is-accepted">Accepted · 5 / 4 / 4</span></div>
             <h3>FlowTrack: Controlling Edit-Signal Execution in Inversion-Free Flow Video Editing</h3>
             <p class="authors"><strong>Jielun Zhong*</strong>, et al.</p>
             <p class="publication-summary">将编辑信号估计与执行解耦，通过 causal direction carrying 与响应感知衰减稳定视频编辑过程，在 419 个评测样本的七项指标中取得六项最佳。</p>
-            <div class="publication-links"><a href="assets/site/flowtrack-comparison.jpg" target="_blank" rel="noreferrer">Results</a><span>Flow matching</span><span>Video generation</span><span>Control</span></div>
+            <div class="publication-links"><a href="https://crychic-sakiko-togawa-214.github.io/FlowTrack/" target="_blank" rel="noreferrer">Demo</a><a href="https://github.com/CRYCHIC-Sakiko-Togawa-214/FlowTrack" target="_blank" rel="noreferrer">Code</a><span>Flow matching</span><span>Video generation</span><span>Control</span></div>
           </div>
         </article>
         <article class="research-project">
           <div class="project-year">2026–2027</div>
           <div><h3>第 29 届䇹政基金科研见习研究项目</h3><p class="project-meta">项目负责人 · 数理大组组长 · LZU–JZH2930</p><p>研究外部先验与内部编辑置信协同的视频编辑方法，负责研究推进、方法实现与小组协作。</p></div>
         </article>
+      </section>
+
+      <section class="content-section projects-section" id="projects">
+        <div class="section-title-row"><h2>Projects &amp; Demos</h2><span class="section-note">selected builds</span></div>
+        <div class="project-grid">
+          <article class="project-card project-card-image">
+            <a class="project-card-visual" href="https://crychic-sakiko-togawa-214.github.io/FlowTrack/" target="_blank" rel="noreferrer" aria-label="打开 FlowTrack Demo"><img src="assets/site/flowtrack-comparison.jpg" alt="FlowTrack 定性对比结果" /></a>
+            <div class="project-card-body"><div class="project-card-topline"><span class="project-kind">Research demo</span><span class="project-year">2026</span></div><h3>FlowTrack</h3><p>在无需 inversion 的 Flow Video Editing 中控制编辑信号执行，现已被 NeurIPS 2026 接收。</p><div class="project-tags"><span>video editing</span><span>flow matching</span></div><div class="project-actions"><a href="https://crychic-sakiko-togawa-214.github.io/FlowTrack/" target="_blank" rel="noreferrer">Open demo <i data-lucide="arrow-up-right"></i></a><a class="project-code-link" href="https://github.com/CRYCHIC-Sakiko-Togawa-214/FlowTrack" target="_blank" rel="noreferrer" aria-label="FlowTrack source code"><i data-lucide="github"></i></a></div></div>
+          </article>
+          <article class="project-card project-card-image">
+            <a class="project-card-visual" href="demos/focusflow.html" aria-label="打开 FocusFlow Demo"><img src="assets/site/focusflow-results.jpg" alt="FocusFlow 视频编辑结果" /></a>
+            <div class="project-card-body"><div class="project-card-topline"><span class="project-kind">Interactive demo</span><span class="project-year">2026</span></div><h3>FocusFlow</h3><p>用 Target Guidance Reallocation 和 Expectation-Confidence Filtering 实现可靠的局部视频编辑。</p><div class="project-tags"><span>local control</span><span>training-free</span></div><div class="project-actions"><a href="demos/focusflow.html">Explore demo <i data-lucide="arrow-up-right"></i></a><a class="project-code-link" href="https://github.com/CRYCHIC-Sakiko-Togawa-214/FocusFlow" target="_blank" rel="noreferrer" aria-label="FocusFlow source code"><i data-lucide="github"></i></a></div></div>
+          </article>
+          <article class="project-card">
+            <a class="project-card-visual project-card-video" href="https://crychic-sakiko-togawa-214.github.io/grace-demo/" target="_blank" rel="noreferrer" aria-label="打开 Between Glances GRACE Demo"><video autoplay muted loop playsinline preload="metadata" poster="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/posters/two-pots-01_scene.jpg" aria-hidden="true" tabindex="-1"><source src="https://crychic-sakiko-togawa-214.github.io/grace-demo/assets/highlights/two-pots-01_grace.mp4" type="video/mp4" /></video><span class="project-preview-label"><span class="status-dot" aria-hidden="true"></span> GRACE in action</span></a>
+            <div class="project-card-body"><div class="project-card-topline"><span class="project-kind">ICLR 2027 · Under Review</span><span class="project-year">2026</span></div><h3>Between Glances</h3><p>研究 GRACE 如何利用几何记忆，在机器人观察间隔中自适应执行 action chunks 并进行重规划。</p><div class="project-tags"><span>robot manipulation</span><span>geometric memory</span></div><div class="project-actions"><a href="https://crychic-sakiko-togawa-214.github.io/grace-demo/" target="_blank" rel="noreferrer">Open demo <i data-lucide="arrow-up-right"></i></a><a class="project-code-link" href="https://github.com/CRYCHIC-Sakiko-Togawa-214/grace-demo" target="_blank" rel="noreferrer" aria-label="GRACE source code"><i data-lucide="github"></i></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-visual project-mark project-mark-club"><span>LZU / LLM</span><small>learn · research · build</small></div>
+            <div class="project-card-body"><div class="project-card-topline"><span class="project-kind">Community platform</span><span class="project-year">2026</span></div><h3>LZU LLM Club</h3><p>面向学习、科研与项目共创的大模型社团网站，包含项目探索、活动与招新流程。</p><div class="project-tags"><span>React</span><span>TypeScript</span></div><div class="project-actions"><a href="https://crychic-sakiko-togawa-214.github.io/llm_club_page/" target="_blank" rel="noreferrer">Visit site <i data-lucide="arrow-up-right"></i></a><a class="project-code-link" href="https://github.com/CRYCHIC-Sakiko-Togawa-214/llm_club_page" target="_blank" rel="noreferrer" aria-label="LZU LLM Club source code"><i data-lucide="github"></i></a></div></div>
+          </article>
+        </div>
       </section>
 
       <section class="content-section" id="experience">

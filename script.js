@@ -66,6 +66,50 @@ document.addEventListener("DOMContentLoaded", () => {
     toastTimer = setTimeout(() => toast?.classList.remove("is-visible"), 1600);
   });
 
+  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const slides = [...carousel.querySelectorAll(".carousel-slide")];
+    const label = carousel.querySelector("[data-carousel-label]");
+    const count = carousel.querySelector("[data-carousel-count]");
+    if (slides.length < 2) return;
+
+    let activeIndex = 0;
+    let timer;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const render = () => {
+      slides.forEach((slide, index) => {
+        const isActive = index === activeIndex;
+        slide.classList.toggle("is-active", isActive);
+        slide.querySelectorAll("video").forEach((video) => {
+          if (isActive) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+      });
+      if (label) label.textContent = slides[activeIndex].dataset.label || "Demo preview";
+      if (count) count.textContent = `${activeIndex + 1} / ${slides.length}`;
+    };
+
+    const start = () => {
+      if (reducedMotion) return;
+      clearInterval(timer);
+      timer = setInterval(() => {
+        activeIndex = (activeIndex + 1) % slides.length;
+        render();
+      }, 5200);
+    };
+
+    render();
+    start();
+    carousel.addEventListener("mouseenter", () => clearInterval(timer));
+    carousel.addEventListener("mouseleave", start);
+    carousel.addEventListener("focusin", () => clearInterval(timer));
+    carousel.addEventListener("focusout", start);
+  });
+
   const year = document.querySelector("#year");
   if (year) year.textContent = new Date().getFullYear();
 });
