@@ -436,6 +436,18 @@ section[id] {
   transform: scale(1.02);
 }
 
+.publication-media-method {
+  background: #f4f5f6;
+}
+
+.publication-media-method img {
+  object-fit: contain;
+}
+
+.publication-media-method:hover img {
+  transform: none;
+}
+
 .publication-carousel {
   aspect-ratio: 1.5;
 }
