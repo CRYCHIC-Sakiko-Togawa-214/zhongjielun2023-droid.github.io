@@ -548,6 +548,13 @@ section[id] {
   color: #a7d6b5;
 }
 
+.publication-award {
+  color: #f0ad94;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
 .publication h3,
 .research-project h3,
 .experience-item h3 {
