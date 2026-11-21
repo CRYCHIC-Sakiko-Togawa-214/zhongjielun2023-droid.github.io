@@ -62,7 +62,7 @@
 
       <section class="bio-section prose-section">
         <p>我是兰州大学计算机科学与技术专业本科生，目前大三，将于 2028 年毕业。我的研究兴趣包括 <strong>生成式人工智能、视频生成与编辑、Diffusion / Flow Matching</strong> 以及 <strong>具身智能</strong>，并对可控生成、视频理解以及更广泛的智能问题保持开放。</p>
-        <p>目前的代表性工作包括视频编辑方向的第一作者论文 <strong>FlowTrack</strong>，以及学生第一作者论文 <strong>FocusFlow</strong>（IEEE TPAMI 一审返修）；两项工作均在新加坡国立大学指导下开展。</p>
+        <p>在视频编辑方向，我分别研究<strong>跨采样步的信号执行稳定性</strong>与<strong>目标区域的空间可控性</strong>，形成第一作者论文 <strong>FlowTrack</strong> 和学生第一作者论文 <strong>FocusFlow</strong>（IEEE TPAMI 一审返修）；两项工作均在新加坡国立大学指导下开展。</p>
       </section>
 
       <aside class="status-note" aria-label="当前研究状态与联系方式">
@@ -86,7 +86,7 @@
             <p class="publication-award"><strong>获 NeurIPS 2026 Financial Assistance Award</strong></p>
             <h3>FlowTrack: Controlling Edit-Signal Execution in Inversion-Free Flow Video Editing</h3>
             <p class="authors"><strong>Jielun Zhong</strong> - First Author, et al.</p>
-            <p class="publication-summary">将编辑信号估计与执行解耦，通过 causal direction carrying 与响应感知衰减稳定视频编辑过程，在评测样本的七项指标中取得七项最佳。</p>
+            <p class="publication-summary"><strong>跨采样步的执行稳定性。</strong>保持原始速度差信号不变，以当前信号跟踪、历史方向延续与响应代价约束构造局部执行目标，推导闭式因果控制律。采样迭代间保留衰减前的方向记忆，减少波动的累积；相较仅响应衰减的版本，加入方向记忆使输出相对源视频的光流端点误差进一步降低 3.13%。</p>
             <div class="publication-links"><a href="https://crychic-sakiko-togawa-214.github.io/FlowTrack/" target="_blank" rel="noreferrer">Demo</a><a href="https://github.com/CRYCHIC-Sakiko-Togawa-214/FlowTrack" target="_blank" rel="noreferrer">Code</a><span>Flow matching</span><span>Video generation</span><span>Control</span></div>
           </div>
         </article>
@@ -95,7 +95,7 @@
             <div class="publication-topline"><span class="venue-badge">IEEE TPAMI</span><span class="review-status">一审返修 · First-round revision</span></div>
             <h3>FocusFlow: Reliable Local Control for Training-Free Video Editing</h3>
             <p class="authors">Jisheng Dang, <strong>Jielun Zhong</strong>, et al. · 学生第一作者</p>
-            <p class="publication-summary">结合外部编辑先验与模型内部置信度，通过目标引导重分配（TGR）和期望-置信度过滤（ECF），增强局部编辑并抑制非目标区域变化。在 FiVE-Bench 全部 419 组编辑对上，相较 8 种无需训练的基线，五项指标均最优；相较 FlowDirector，背景 LPIPS 降低 19.83%。</p>
+            <p class="publication-summary"><strong>目标区域的空间可控性。</strong>以分割先验界定预期编辑位置，以先验调制前的模型响应提供内部置信度；TGR 先调整目标分支的条件引导，ECF 再过滤候选更新。在 FiVE-Bench 全部 419 组编辑对上，相较 8 种无需训练的基线，五项指标均最优，背景 LPIPS 较 FlowDirector 降低 19.83%；相同先验对照与边界扰动实验进一步验证局部控制机制。</p>
             <div class="publication-links"><span>Training-free</span><span>Video editing</span><span>Local control</span></div>
           </div>
         </article>
