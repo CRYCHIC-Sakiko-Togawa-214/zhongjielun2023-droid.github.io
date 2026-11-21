@@ -416,6 +416,10 @@ section[id] {
   padding-top: 4px;
 }
 
+.publication.publication-text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .publication-media {
   background: var(--surface);
   border-radius: 5px;
